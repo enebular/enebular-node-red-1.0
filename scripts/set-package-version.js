@@ -6,13 +6,13 @@ const should = require("should");
 
 const rootPackage = path.join(__dirname, "..", "package.json");
 const packages = [
-  "node-red",
-  "@node-red/editor-api",
-  "@node-red/editor-client",
-  "@node-red/nodes",
-  "@node-red/registry",
-  "@node-red/runtime",
-  "@node-red/util",
+  "@uhuru/enebular-node-red",
+  "@uhuru/enebular-node-red-editor-api",
+  "@uhuru/enebular-node-red-editor-client",
+  "@uhuru/enebular-node-red-nodes",
+  "@uhuru/enebular-node-red-registry",
+  "@uhuru/enebular-node-red-runtime",
+  "@uhuru/enebular-node-red-util",
 ];
 function updatePackage(packageFile, version) {
   let modulePackage = require(packageFile);

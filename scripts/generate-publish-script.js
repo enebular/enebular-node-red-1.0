@@ -7,13 +7,13 @@ const should = require("should");
 function generateScript() {
   return new Promise((resolve, reject) => {
     const packages = [
-      "enebular-node-red-util",
-      "enebular-node-red-runtime",
-      "enebular-node-red-registry",
-      "enebular-node-red-nodes",
-      "enebular-node-red-editor-client",
-      "enebular-node-red-editor-api",
-      "enebular-node-red",
+      "uhuru-enebular-node-red-util",
+      "uhuru-enebular-node-red-runtime",
+      "uhuru-enebular-node-red-registry",
+      "uhuru-enebular-node-red-nodes",
+      "uhuru-enebular-node-red-editor-client",
+      "uhuru-enebular-node-red-editor-api",
+      "uhuru-enebular-node-red",
     ];
     const rootPackage = require(path.join(__dirname, "..", "package.json"));
     const version = rootPackage.version;

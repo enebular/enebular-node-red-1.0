@@ -114,7 +114,9 @@ module.exports = function (grunt) {
       },
       editor: {
         files: {
-          src: ["packages/node_modules/@node-red/editor-client/src/js/**/*.js"],
+          src: [
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/**/*.js",
+          ],
         },
       },
       tests: {
@@ -134,90 +136,91 @@ module.exports = function (grunt) {
         src: [
           // Ensure editor source files are concatenated in
           // the right order
-          "packages/node_modules/@node-red/editor-client/src/js/jquery-addons.js",
-          "packages/node_modules/@node-red/editor-client/src/js/red.js",
-          "packages/node_modules/@node-red/editor-client/src/js/events.js",
-          "packages/node_modules/@node-red/editor-client/src/js/i18n.js",
-          "packages/node_modules/@node-red/editor-client/src/js/settings.js",
-          "packages/node_modules/@node-red/editor-client/src/js/user.js",
-          "packages/node_modules/@node-red/editor-client/src/js/comms.js",
-          "packages/node_modules/@node-red/editor-client/src/js/text/bidi.js",
-          "packages/node_modules/@node-red/editor-client/src/js/text/format.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/state.js",
-          "packages/node_modules/@node-red/editor-client/src/js/nodes.js",
-          "packages/node_modules/@node-red/editor-client/src/js/font-awesome.js",
-          "packages/node_modules/@node-red/editor-client/src/js/history.js",
-          "packages/node_modules/@node-red/editor-client/src/js/validators.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/utils.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/editableList.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/treeList.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/checkboxSet.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/menu.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/panels.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/popover.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/searchBox.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/tabs.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/stack.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/typedInput.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/common/toggleButton.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/actions.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/deploy.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/diff.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/keyboard.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/workspaces.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/statusBar.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/view.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/view-navigator.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/view-tools.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/sidebar.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/palette.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/tab-info.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/tab-config.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/tab-context.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/palette-editor.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/editor.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/editors/*.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/event-log.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/tray.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/clipboard.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/library.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/notifications.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/search.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/actionList.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/typeSearch.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/subflow.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/userSettings.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projects.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projectSettings.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projectUserSettings.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/projects/tab-versionControl.js",
-          "packages/node_modules/@node-red/editor-client/src/js/ui/touch/radialMenu.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/jquery-addons.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/red.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/events.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/i18n.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/settings.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/user.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/comms.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/text/bidi.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/text/format.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/state.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/nodes.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/font-awesome.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/history.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/validators.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/utils.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/editableList.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/treeList.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/checkboxSet.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/menu.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/panels.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/popover.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/searchBox.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/tabs.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/stack.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/typedInput.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/common/toggleButton.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/actions.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/deploy.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/diff.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/keyboard.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/workspaces.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/statusBar.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/view.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/view-navigator.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/view-tools.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/sidebar.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/palette.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/tab-info.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/tab-config.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/tab-context.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/palette-editor.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/editor.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/editors/*.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/event-log.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/tray.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/clipboard.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/library.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/notifications.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/search.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/actionList.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/typeSearch.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/subflow.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/userSettings.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/projects/projects.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/projects/projectSettings.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/projects/projectUserSettings.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/projects/tab-versionControl.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/ui/touch/radialMenu.js",
         ],
-        dest: "packages/node_modules/@node-red/editor-client/public/red/red.js",
+        dest:
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/red.js",
       },
       vendor: {
         files: {
-          "packages/node_modules/@node-red/editor-client/public/vendor/vendor.js": [
-            "packages/node_modules/@node-red/editor-client/src/vendor/jquery/js/jquery-3.4.1.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/jquery/js/jquery-migrate-3.0.1.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/jquery/js/jquery-ui.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/jquery/js/jquery.ui.touch-punch.min.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/vendor.js": [
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jquery/js/jquery-3.4.1.min.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jquery/js/jquery-migrate-3.0.1.min.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jquery/js/jquery-ui.min.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jquery/js/jquery.ui.touch-punch.min.js",
             "node_modules/marked/marked.min.js",
             "node_modules/dompurify/dist/purify.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/d3/d3.v3.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/i18next/i18next.min.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/d3/d3.v3.min.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/i18next/i18next.min.js",
             "node_modules/jsonata/jsonata-es5.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/jsonata/formatter.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/ace/ace.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/ace/ext-language_tools.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jsonata/formatter.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/ace/ace.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/ace/ext-language_tools.js",
           ],
-          // "packages/node_modules/@node-red/editor-client/public/vendor/vendor.css": [
+          // "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/vendor.css": [
           //     // TODO: resolve relative resource paths in
           //     //       bootstrap/FA/jquery
           // ],
-          "packages/node_modules/@node-red/editor-client/public/vendor/ace/worker-jsonata.js": [
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/ace/worker-jsonata.js": [
             "node_modules/jsonata/jsonata-es5.min.js",
-            "packages/node_modules/@node-red/editor-client/src/vendor/jsonata/worker-jsonata.js",
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jsonata/worker-jsonata.js",
           ],
         },
       },
@@ -225,14 +228,14 @@ module.exports = function (grunt) {
     uglify: {
       build: {
         files: {
-          "packages/node_modules/@node-red/editor-client/public/red/red.min.js":
-            "packages/node_modules/@node-red/editor-client/public/red/red.js",
-          "packages/node_modules/@node-red/editor-client/public/red/main.min.js":
-            "packages/node_modules/@node-red/editor-client/public/red/main.js",
-          "packages/node_modules/@node-red/editor-client/public/vendor/ace/mode-jsonata.js":
-            "packages/node_modules/@node-red/editor-client/src/vendor/jsonata/mode-jsonata.js",
-          "packages/node_modules/@node-red/editor-client/public/vendor/ace/snippets/jsonata.js":
-            "packages/node_modules/@node-red/editor-client/src/vendor/jsonata/snippets-jsonata.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/red.min.js":
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/red.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/main.min.js":
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/main.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/ace/mode-jsonata.js":
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jsonata/mode-jsonata.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/ace/snippets/jsonata.js":
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor/jsonata/snippets-jsonata.js",
         },
       },
     },
@@ -245,9 +248,9 @@ module.exports = function (grunt) {
         files: [
           {
             dest:
-              "packages/node_modules/@node-red/editor-client/public/red/style.min.css",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/style.min.css",
             src:
-              "packages/node_modules/@node-red/editor-client/src/sass/style.scss",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/sass/style.scss",
           },
         ],
       },
@@ -255,38 +258,38 @@ module.exports = function (grunt) {
     jsonlint: {
       messages: {
         src: [
-          "packages/node_modules/@node-red/nodes/locales/**/*.json",
-          "packages/node_modules/@node-red/editor-client/locales/**/*.json",
-          "packages/node_modules/@node-red/runtime/locales/**/*.json",
+          "packages/node_modules/@uhuru/enebular-node-red-nodes/locales/**/*.json",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/locales/**/*.json",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/locales/**/*.json",
         ],
       },
       keymaps: {
         src: [
-          "packages/node_modules/@node-red/editor-client/src/js/keymap.json",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/keymap.json",
         ],
       },
     },
     attachCopyright: {
       js: {
         src: [
-          "packages/node_modules/@node-red/editor-client/public/red/red.min.js",
-          "packages/node_modules/@node-red/editor-client/public/red/main.min.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/red.min.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/main.min.js",
         ],
       },
       css: {
         src: [
-          "packages/node_modules/@node-red/editor-client/public/red/style.min.css",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/style.min.css",
         ],
       },
     },
     clean: {
       build: {
         src: [
-          "packages/node_modules/@node-red/editor-client/public/red",
-          "packages/node_modules/@node-red/editor-client/public/index.html",
-          "packages/node_modules/@node-red/editor-client/public/favicon.ico",
-          "packages/node_modules/@node-red/editor-client/public/icons",
-          "packages/node_modules/@node-red/editor-client/public/vendor",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/index.html",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/favicon.ico",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/icons",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor",
         ],
       },
       release: {
@@ -295,26 +298,28 @@ module.exports = function (grunt) {
     },
     watch: {
       js: {
-        files: ["packages/node_modules/@node-red/editor-client/src/js/**/*.js"],
+        files: [
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/**/*.js",
+        ],
         tasks: ["copy:build", "concat", /*'uglify',*/ "attachCopyright:js"],
       },
       sass: {
         files: [
-          "packages/node_modules/@node-red/editor-client/src/sass/**/*.scss",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/sass/**/*.scss",
         ],
         tasks: ["sass", "attachCopyright:css"],
       },
       json: {
         files: [
-          "packages/node_modules/@node-red/nodes/locales/**/*.json",
-          "packages/node_modules/@node-red/editor-client/locales/**/*.json",
-          "packages/node_modules/@node-red/runtime/locales/**/*.json",
+          "packages/node_modules/@uhuru/enebular-node-red-nodes/locales/**/*.json",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/locales/**/*.json",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/locales/**/*.json",
         ],
         tasks: ["jsonlint:messages"],
       },
       keymaps: {
         files: [
-          "packages/node_modules/@node-red/editor-client/src/js/keymap.json",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/keymap.json",
         ],
         tasks: ["jsonlint:keymaps", "copy:build"],
       },
@@ -327,13 +332,13 @@ module.exports = function (grunt) {
     nodemon: {
       /* uses .nodemonignore */
       dev: {
-        script: "packages/node_modules/node-red/red.js",
+        script: "packages/node_modules/@uhuru/enebular-node-red/red.js",
         options: {
           args: nodemonArgs,
           ext: "js,html,json",
           watch: [
             "packages/node_modules",
-            "!packages/node_modules/@node-red/editor-client",
+            "!packages/node_modules/@uhuru/enebular-node-red-editor-client",
           ],
         },
       },
@@ -352,60 +357,67 @@ module.exports = function (grunt) {
       build: {
         files: [
           {
-            src: "packages/node_modules/@node-red/editor-client/src/js/main.js",
+            src:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/main.js",
             dest:
-              "packages/node_modules/@node-red/editor-client/public/red/main.js",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/main.js",
           },
           {
             src:
-              "packages/node_modules/@node-red/editor-client/src/js/keymap.json",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js/keymap.json",
             dest:
-              "packages/node_modules/@node-red/editor-client/public/red/keymap.json",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/keymap.json",
           },
           {
-            cwd: "packages/node_modules/@node-red/editor-client/src/images",
+            cwd:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/images",
             src: "**",
             expand: true,
             dest:
-              "packages/node_modules/@node-red/editor-client/public/red/images/",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/images/",
           },
           {
-            cwd: "packages/node_modules/@node-red/editor-client/src/vendor",
+            cwd:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/vendor",
             src: ["ace/**", "jquery/css/base/**", "font-awesome/**"],
             expand: true,
             dest:
-              "packages/node_modules/@node-red/editor-client/public/vendor/",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/",
           },
           {
-            cwd: "packages/node_modules/@node-red/editor-client/src/icons",
+            cwd:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/icons",
             src: "**",
             expand: true,
-            dest: "packages/node_modules/@node-red/editor-client/public/icons/",
+            dest:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/icons/",
           },
           {
             expand: true,
             src: [
-              "packages/node_modules/@node-red/editor-client/src/index.html",
-              "packages/node_modules/@node-red/editor-client/src/favicon.ico",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/index.html",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/favicon.ico",
             ],
-            dest: "packages/node_modules/@node-red/editor-client/public/",
+            dest:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/",
             flatten: true,
           },
           {
             src: "CHANGELOG.md",
             dest:
-              "packages/node_modules/@node-red/editor-client/public/red/about",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/red/about",
           },
           {
             src: "CHANGELOG.md",
-            dest: "packages/node_modules/node-red/",
+            dest: "packages/node_modules/@uhuru/enebular-node-red/",
           },
           {
-            cwd: "packages/node_modules/@node-red/editor-client/src/ace/bin/",
+            cwd:
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/ace/bin/",
             src: "**",
             expand: true,
             dest:
-              "packages/node_modules/@node-red/editor-client/public/vendor/ace/",
+              "packages/node_modules/@uhuru/enebular-node-red-editor-client/public/vendor/ace/",
           },
         ],
       },
@@ -416,8 +428,8 @@ module.exports = function (grunt) {
       },
       release: {
         src: [
-          "packages/node_modules/@node-red/nodes/core/hardware/nrgpio",
-          "packages/node_modules/@node-red/runtime/lib/storage/localfilesystem/projects/git/node-red-*sh",
+          "packages/node_modules/@uhuru/enebular-node-red-nodes/core/hardware/nrgpio",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/storage/localfilesystem/projects/git/node-red-*sh",
         ],
       },
     },
@@ -426,37 +438,55 @@ module.exports = function (grunt) {
         cmd: "pack",
         cwd: "<%= paths.dist %>/modules",
       },
-      "@uhuru/@enebular-node-red": {
-        options: { args: [__dirname + "/packages/node_modules/node-red"] },
-      },
-      "@uhuru/@enebular-node-red/editor-api": {
+      "@uhuru/enebular-node-red": {
         options: {
-          args: [__dirname + "/packages/node_modules/@node-red/editor-api"],
+          args: [__dirname + "/packages/node_modules/@uhuru/enebular-node-red"],
         },
       },
-      "@uhuru/@enebular-node-red/editor-client": {
+      "@uhuru/enebular-node-red-editor-api": {
         options: {
-          args: [__dirname + "/packages/node_modules/@node-red/editor-client"],
+          args: [
+            __dirname +
+              "/packages/node_modules/@uhuru/enebular-node-red-editor-api",
+          ],
         },
       },
-      "@uhuru/@enebular-node-red/nodes": {
+      "@uhuru/enebular-node-red-editor-client": {
         options: {
-          args: [__dirname + "/packages/node_modules/@node-red/nodes"],
+          args: [
+            __dirname +
+              "/packages/node_modules/@uhuru/enebular-node-red-editor-client",
+          ],
         },
       },
-      "@uhuru/@enebular-node-red/registry": {
+      "@uhuru/enebular-node-red-nodes": {
         options: {
-          args: [__dirname + "/packages/node_modules/@node-red/registry"],
+          args: [
+            __dirname + "/packages/node_modules/@uhuru/enebular-node-red-nodes",
+          ],
         },
       },
-      "@uhuru/@enebular-node-red/runtime": {
+      "@uhuru/enebular-node-red-registry": {
         options: {
-          args: [__dirname + "/packages/node_modules/@node-red/runtime"],
+          args: [
+            __dirname +
+              "/packages/node_modules/@uhuru/enebular-node-red-registry",
+          ],
         },
       },
-      "@uhuru/@enebular-node-red/util": {
+      "@uhuru/enebular-node-red-runtime": {
         options: {
-          args: [__dirname + "/packages/node_modules/@node-red/util"],
+          args: [
+            __dirname +
+              "/packages/node_modules/@uhuru/enebular-node-red-runtime",
+          ],
+        },
+      },
+      "@uhuru/enebular-node-red-util": {
+        options: {
+          args: [
+            __dirname + "/packages/node_modules/@uhuru/enebular-node-red-util",
+          ],
         },
       },
     },
@@ -470,24 +500,24 @@ module.exports = function (grunt) {
     compress: {
       release: {
         options: {
-          archive: "<%= paths.dist %>/node-red-<%= pkg.version %>.zip",
+          archive: "<%= paths.dist %>/enebular-node-red-<%= pkg.version %>.zip",
         },
         expand: true,
         cwd: "packages/node_modules/",
-        src: ["**", "!@node-red/editor-client/src/**"],
+        src: ["**", "!@uhuru/enebular-node-red-editor-client/src/**"],
       },
     },
     jsdoc: {
       modules: {
         src: [
           "API.md",
-          "packages/node_modules/node-red/lib/red.js",
-          "packages/node_modules/@node-red/runtime/lib/index.js",
-          "packages/node_modules/@node-red/runtime/lib/api/*.js",
-          "packages/node_modules/@node-red/runtime/lib/events.js",
-          "packages/node_modules/@node-red/util/**/*.js",
-          "packages/node_modules/@node-red/editor-api/lib/index.js",
-          "packages/node_modules/@node-red/editor-api/lib/auth/index.js",
+          "packages/node_modules/@uhuru/enebular-node-red/lib/red.js",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/index.js",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/api/*.js",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/events.js",
+          "packages/node_modules/@uhuru/enebular-node-red-util/**/*.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-api/lib/index.js",
+          "packages/node_modules/@uhuru/enebular-node-red-editor-api/lib/auth/index.js",
         ],
         options: {
           destination: "docs",
@@ -495,9 +525,12 @@ module.exports = function (grunt) {
         },
       },
       _editor: {
-        src: ["packages/node_modules/@node-red/editor-client/src/js"],
+        src: [
+          "packages/node_modules/@uhuru/enebular-node-red-editor-client/src/js",
+        ],
         options: {
-          destination: "packages/node_modules/@node-red/editor-client/docs",
+          destination:
+            "packages/node_modules/@uhuru/enebular-node-red-editor-client/docs",
           configure: "./jsdoc.json",
         },
       },
@@ -508,18 +541,19 @@ module.exports = function (grunt) {
           separators: true,
         },
         src: [
-          "packages/node_modules/@node-red/runtime/lib/index.js",
-          "packages/node_modules/@node-red/runtime/lib/api/*.js",
-          "packages/node_modules/@node-red/runtime/lib/events.js",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/index.js",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/api/*.js",
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/lib/events.js",
         ],
-        dest: "packages/node_modules/@node-red/runtime/docs/api.md",
+        dest:
+          "packages/node_modules/@uhuru/enebular-node-red-runtime/docs/api.md",
       },
       nodeREDUtil: {
         options: {
           separators: true,
         },
-        src: "packages/node_modules/@node-red/util/**/*.js",
-        dest: "packages/node_modules/@node-red/util/docs/api.md",
+        src: "packages/node_modules/@uhuru/enebular-node-red-util/**/*.js",
+        dest: "packages/node_modules/@uhuru/enebular-node-red-util/docs/api.md",
       },
     },
   });

@@ -18,7 +18,8 @@ function generateScript() {
     const rootPackage = require(path.join(__dirname, "..", "package.json"));
     const version = rootPackage.version;
 
-    const tagArg = /-/.test(version) ? "--tag next" : "";
+    //    const tagArg = /-/.test(version) ? "--tag test" : "";
+    const tagArg = "--tag test";
 
     const lines = [];
 

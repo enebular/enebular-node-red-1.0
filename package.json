@@ -1,6 +1,6 @@
 {
     "name": "@uhuru/enebular-node-red",
-    "version": "1.0.5-alpha.9",
+    "version": "1.0.5-alpha.10",
     "description": "Node Red customized to work with Enebular",
     "homepage": "https://enebular.com",
     "license": "Apache-2.0",
@@ -57,9 +57,8 @@
         "node-red-node-rbe": "^0.2.6",
         "node-red-node-tail": "^0.1.0",
         "node-red-node-email": "0.1.*",
-        "node-red-contrib-pubnub": "^4.0.2",
         "node-red-dashboard": "^2.13.0",
-        "node-red-contrib-firebase-data": "0.0.10",
+        "node-red-node-pi-gpio": "1.1.1",
         "nopt": "4.0.3",
         "oauth2orize": "1.11.0",
         "on-headers": "1.0.2",

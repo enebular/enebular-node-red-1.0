@@ -19,7 +19,7 @@ function generateScript() {
     const version = rootPackage.version;
 
     //    const tagArg = /-/.test(version) ? "--tag test" : "";
-    const tagArg = "--tag test";
+    const tagArg = "";
 
     const lines = [];
 

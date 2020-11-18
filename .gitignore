@@ -16,3 +16,5 @@ nodes/node-red-nodes/
 node_modules
 locales/zz-ZZ
 nodes/core/locales/zz-ZZ
+!packages/node_modules/
+packages/node_modules/**/enebular-node-red-editor-client/public/

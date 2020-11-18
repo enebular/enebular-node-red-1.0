@@ -1,18 +1,18 @@
 {
-    "name": "node-red",
-    "version": "1.0.5",
-    "description": "Low-code programming for event-driven applications",
-    "homepage": "http://nodered.org",
+    "name": "@uhuru/enebular-node-red",
+    "version": "1.0.5-alpha.12",
+    "description": "Node Red customized to work with Enebular",
+    "homepage": "https://enebular.com",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/node-red/node-red.git"
+        "url": "https://github.com/enebular/enebular-node-red-1.0.git"
     },
     "private": "true",
     "scripts": {
-        "start": "node packages/node_modules/node-red/red.js",
+        "start": "node packages/node_modules/@uhuru/enebular-node-red/red.js",
         "test": "grunt",
-        "build": "grunt build",
+        "build": "npx grunt build",
         "docs": "grunt docs"
     },
     "contributors": [
@@ -55,8 +55,9 @@
         "multer": "1.4.2",
         "mustache": "4.0.1",
         "node-red-node-rbe": "^0.2.6",
-        "node-red-node-sentiment": "^0.1.6",
         "node-red-node-tail": "^0.1.0",
+        "node-red-node-email": "0.1.*",
+        "node-red-dashboard": "^2.13.0",
         "nopt": "4.0.3",
         "oauth2orize": "1.11.0",
         "on-headers": "1.0.2",
@@ -82,7 +83,7 @@
         "grunt-cli": "~1.3.2",
         "grunt-concurrent": "~2.3.1",
         "grunt-contrib-clean": "~2.0.0",
-        "grunt-contrib-compress": "~1.5.0",
+        "grunt-contrib-compress": "~1.6.0",
         "grunt-contrib-concat": "~1.0.1",
         "grunt-contrib-copy": "~1.0.0",
         "grunt-contrib-jshint": "~2.1.0",
@@ -102,7 +103,6 @@
         "jsdoc-nr-template": "github:node-red/jsdoc-nr-template",
         "minami": "1.2.3",
         "mocha": "^5.2.0",
-        "mosca": "^2.8.3",
         "node-red-node-test-helper": "^0.2.3",
         "node-sass": "^4.13.1",
         "should": "^8.4.0",

@@ -17,7 +17,7 @@
 var should = require("should");
 var sinon = require("sinon");
 var helper = require("node-red-node-test-helper");
-var execNode = require("nr-test-utils").require("@node-red/nodes/core/function/90-exec.js");
+var execNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/function/90-exec.js");
 var osType = require("os").type();
 
 var child_process = require('child_process');

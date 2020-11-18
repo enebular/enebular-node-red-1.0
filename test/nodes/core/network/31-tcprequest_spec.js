@@ -18,8 +18,8 @@ var net = require("net");
 var should = require("should");
 var stoppable = require('stoppable');
 var helper = require("node-red-node-test-helper");
-var tcpinNode = require("nr-test-utils").require("@node-red/nodes/core/network/31-tcpin.js");
-var RED = require("nr-test-utils").require("node-red/lib/red.js");
+var tcpinNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/network/31-tcpin.js");
+var RED = require("nr-test-utils").require("@uhuru/enebular-node-red/lib/red.js");
 
 
 describe('TCP Request Node', function() {

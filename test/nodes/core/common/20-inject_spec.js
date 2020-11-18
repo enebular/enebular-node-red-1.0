@@ -15,8 +15,8 @@
  **/
 
 var should = require("should");
-var injectNode = require("nr-test-utils").require("@node-red/nodes/core/common/20-inject.js");
-var Context = require("nr-test-utils").require("@node-red/runtime/lib/nodes/context");
+var injectNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/common/20-inject.js");
+var Context = require("nr-test-utils").require("@uhuru/enebular-node-red-runtime/lib/nodes/context");
 var helper = require("node-red-node-test-helper");
 
 describe('inject node', function() {

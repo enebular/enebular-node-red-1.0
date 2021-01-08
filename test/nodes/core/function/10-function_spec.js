@@ -15,8 +15,8 @@
 **/
 
 var should = require("should");
-var functionNode = require("nr-test-utils").require("@node-red/nodes/core/function/10-function.js");
-var Context = require("nr-test-utils").require("@node-red/runtime/lib/nodes/context");
+var functionNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/function/10-function.js");
+var Context = require("nr-test-utils").require("@uhuru/enebular-node-red-runtime/lib/nodes/context");
 var helper = require("node-red-node-test-helper");
 
 describe('function node', function() {

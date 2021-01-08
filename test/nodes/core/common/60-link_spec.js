@@ -15,7 +15,7 @@
  **/
 
 var should = require("should");
-var linkNode = require("nr-test-utils").require("@node-red/nodes/core/common/60-link.js");
+var linkNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/common/60-link.js");
 var helper = require("node-red-node-test-helper");
 
 describe('link Node', function() {

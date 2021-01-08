@@ -15,7 +15,7 @@
  **/
 
 var when = require("when");
-var events = require("nr-test-utils").require("@node-red/runtime/lib/events.js");
+var events = require("nr-test-utils").require("@uhuru/enebular-node-red-runtime/lib/events.js");
 var palette = require("./palette_page");
 var nodeFactory = require("../nodes/nodefactory_page");
 var keyPage = require("../util/key_page");

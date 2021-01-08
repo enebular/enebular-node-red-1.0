@@ -15,7 +15,7 @@
  **/
 
 var should = require("should");
-var catchNode = require("nr-test-utils").require("@node-red/nodes/core/common/25-status.js");
+var catchNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/common/25-status.js");
 var helper = require("node-red-node-test-helper");
 
 describe('status Node', function() {

@@ -20,7 +20,7 @@ var fs = require('fs-extra');
 var os = require('os');
 var sinon = require("sinon");
 var iconv = require("iconv-lite");
-var fileNode = require("nr-test-utils").require("@node-red/nodes/core/storage/10-file.js");
+var fileNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/storage/10-file.js");
 var helper = require("node-red-node-test-helper");
 
 describe('file Nodes', function() {

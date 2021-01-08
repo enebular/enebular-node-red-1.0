@@ -16,7 +16,7 @@
 
 var should = require("should");
 
-var delayNode = require("nr-test-utils").require("@node-red/nodes/core/function/89-delay.js");
+var delayNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/function/89-delay.js");
 var helper = require("node-red-node-test-helper");
 
 var GRACE_PERCENTAGE=10;

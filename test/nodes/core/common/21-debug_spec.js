@@ -15,7 +15,7 @@
  **/
 
 var should = require("should");
-var debugNode = require("nr-test-utils").require("@node-red/nodes/core/common/21-debug.js");
+var debugNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/common/21-debug.js");
 var helper = require("node-red-node-test-helper");
 var WebSocket = require('ws');
 

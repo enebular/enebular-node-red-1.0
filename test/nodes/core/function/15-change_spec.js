@@ -17,8 +17,8 @@
 var should = require("should");
 var sinon = require("sinon");
 
-var changeNode = require("nr-test-utils").require("@node-red/nodes/core/function/15-change.js");
-var Context = require("nr-test-utils").require("@node-red/runtime/lib/nodes/context");
+var changeNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/function/15-change.js");
+var Context = require("nr-test-utils").require("@uhuru/enebular-node-red-runtime/lib/nodes/context");
 var helper = require("node-red-node-test-helper");
 
 describe('change Node', function() {

@@ -16,7 +16,7 @@
 
 var should = require("should");
 
-var rangeNode = require("nr-test-utils").require("@node-red/nodes/core/function/16-range.js");
+var rangeNode = require("nr-test-utils").require("@uhuru/enebular-node-red-nodes/core/function/16-range.js");
 var helper = require("node-red-node-test-helper");
 
 describe('range Node', function() {

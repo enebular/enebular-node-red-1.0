@@ -57,7 +57,7 @@
         "node-red-node-rbe": "^0.2.6",
         "node-red-node-tail": "^0.1.0",
         "node-red-node-email": "0.1.*",
-        "node-red-dashboard": "^2.13.0",
+        "node-red-dashboard": "^2.26.2",
         "nopt": "4.0.3",
         "oauth2orize": "1.11.0",
         "on-headers": "1.0.2",

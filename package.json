@@ -100,7 +100,7 @@
         "http-proxy": "^1.18.1",
         "istanbul": "0.4.5",
         "jsdoc-nr-template": "github:node-red/jsdoc-nr-template",
-        "marked": "0.8.2",
+        "marked": "4.0.10",
         "minami": "1.2.3",
         "mocha": "^8.2.1",
         "node-red-node-test-helper": "^0.2.3",
